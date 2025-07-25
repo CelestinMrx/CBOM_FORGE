@@ -26,7 +26,7 @@ jobs:
       matrix:
         repository: ${{ fromJSON(needs.build-matrix.outputs.repositories) }}
     steps:
-      - uses: advanced-security/cbom-action/analyze@main
+      - uses: CelestinMrx/cbom-action/analyze@main
         with:
           repositoryNameWithOwner: ${{ fromJson(matrix.repository).nameWithOwner }}
           language: ${{ fromJson(matrix.repository).language }}

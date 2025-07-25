@@ -35,5 +35,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: run-cbom-action
     steps:
-      - uses: advanced-security/cbom-action/workflow-summary@main
+      - uses: CelestinMrx/cbom-action/workflow-summary@main
  
